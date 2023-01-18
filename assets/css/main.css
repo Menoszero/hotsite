@@ -1,7 +1,7 @@
 /* Fonts */
 :root {
   --font-default: "Open Sans", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  --font-primary: "Roboto", sans-serif;
+  --font-primary: 'Poppins', sans-serif;
   --font-secondary: "Work Sans", sans-serif;
 }
 
@@ -22,7 +22,7 @@
 # General
 --------------------------------------------------------------*/
 body {
-  font-family: var(--font-default);
+  font-family: var(--font-primary);
   color: var(--color-default);
   overflow-x: hidden;
 }
@@ -548,18 +548,7 @@ section {
 
 }
 
-.hero .info h2:after {
-  content: "";
-  position: absolute;
-  display: block;
-  width: 60%;
-  height: 4px;
-  background: var(--color-primary);
-  left: 0;
-  right: 0;
-  bottom: 0;
-  margin: auto;
-}
+
 
 @media (max-width: 768px) {
   .hero .info h2 {
@@ -683,6 +672,48 @@ section {
   width: 100%;
 }
 
+/*--------------------------------------------------------------
+# Section Two
+--------------------------------------------------------------*/
+
+/* 
+.section-two {
+  
+} */
+.section-two h1 {
+  color: var(--color-primary);
+  font-size: 3rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1rem;
+}
+
+.section-two h1:after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 60%;
+  height: 4px;
+  background: var(--color-primary);
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+.section-two h3 {
+  color: var(--color-primary);
+  font-size: 1.8rem;
+  font-weight: bold;
+  padding-bottom: 2rem;
+}
+
+.section-two ul li {
+  color: var(--color-roxo);
+  font-size: 1rem;
+  font-weight: bold;
+  padding: 10px 0;
+
+}
 
 /*--------------------------------------------------------------
 # Section three
@@ -690,8 +721,34 @@ section {
 
 
 .section-three {
-  height: 400px;
+
   background-image: url("../img/bg-dobra-2.png");
+  background-color: rgba(0, 0, 0, 0.7);
+
+}
+
+.section-three img {
+  max-width: 300px;
+
+}
+
+.section-three .btn-three-section {
+  font-family: var(--font-primary);
+  font-weight: bold;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 12px 40px;
+  border-radius: 50px;
+  transition: 0.5s;
+  margin: 10px;
+  color: #fff;
+  border: 5px solid #fff;
+}
+
+.section-three .btn-three-section:hover {
+  background: var(--color-primary);
 }
 
 /*--------------------------------------------------------------
@@ -700,8 +757,22 @@ section {
 
 
 .section-five {
-  height: 500px;
+
   background-image: url("../img/bg-dobra-3.png");
+}
+
+.section-five .content h4 {
+  color: #fff;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+
+}
+
+.section-five .content p {
+  color: #fff;
+  font-size: 1rem;
+  text-transform: uppercase;
+
 }
 
 /*--------------------------------------------------------------
@@ -713,4 +784,5 @@ section {
   font-size: 14px;
   padding: 80px 0 60px 0;
   position: relative;
+  height: 20px;
 }
