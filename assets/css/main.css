@@ -8,7 +8,7 @@
 /* Colors */
 :root {
   --color-default: #364d59;
-  --color-primary: #feb900;
+  --color-primary: #FEBE2D;
   --color-secondary: #52565e;
   --color-roxo: #60539f;
 }
@@ -211,11 +211,11 @@ section {
 }
 
 .header .logo img {
-  max-height: 100px;
+  max-height: 80px;
   margin-right: 6px;
 }
 
-.header .logo h1 {
+/* .header .logo h1 {
   font-size: 24px;
   font-weight: 700;
   color: #fff;
@@ -225,7 +225,7 @@ section {
 
 .header .logo h1 span {
   color: var(--color-primary);
-}
+} */
 
 /*--------------------------------------------------------------
 # Desktop Navigation
@@ -516,15 +516,14 @@ section {
   transition-duration: 0.4s;
 }
 
-.hero .carousel-item::before {
+/* .hero .carousel-item::before {
   content: "";
-  /* background-color: rgba(0, 0, 0, 0.7); */
   background: rgb(2, 0, 36);
   background: linear-gradient(256deg, rgba(2, 0, 36, 1) 0%, rgba(57, 9, 121, 1) 35%, rgba(0, 212, 255, 1) 100%);
   opacity: 80%;
   position: absolute;
   inset: 0;
-}
+} */
 
 .hero .info {
   position: absolute;
@@ -553,6 +552,12 @@ section {
 @media (max-width: 768px) {
   .hero .info h2 {
     font-size: 2rem;
+  }
+
+  #hero-video {
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
   }
 }
 
@@ -647,7 +652,7 @@ section {
   padding: 30px 0;
 }
 
-.get-started .content span {
+.get-started .content h3 {
   font-size: 2.5rem;
   color: var(--color-primary);
   font-weight: bold;
@@ -656,6 +661,21 @@ section {
   position: relative;
 
 }
+
+.get-started .content h3:after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 40%;
+  height: 4px;
+  background: var(--color-primary);
+  bottom: 0;
+  left: 0;
+  /* right: 0; */
+  margin: auto;
+
+}
+
 
 .get-started .content p {
   font-size: 1rem;
@@ -713,6 +733,40 @@ section {
   font-weight: bold;
   padding: 10px 0;
 
+}
+
+.tab-content table th {
+  text-transform: uppercase;
+
+}
+
+.section-two .tab-content .card {
+
+  border-radius: 10%;
+  padding: 20px 0;
+  background-color: var(--color-primary);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.section-two .tab-content h3 {
+
+  text-transform: uppercase;
+  color: #FD63A6;
+}
+
+
+.section-two .tab-content .card p {
+
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.section-two .tab-content .card span {
+  content: "";
+  border: 1px dashed green;
 }
 
 /*--------------------------------------------------------------
