@@ -698,9 +698,9 @@ section {
   width: 90%;
   height: 0px;
   left: 0;
-  top: 1440px;
-
+  top: 1340px;
   border: 2px solid var(--color-primary);
+  animation: line-roxo 5s linear;
 }
 
 .get-started .two {
@@ -708,21 +708,36 @@ section {
   width: 90%;
   height: 0px;
   right: 0px;
-  top: 1450px;
-
+  top: 1350px;
   border: 2px solid var(--color-roxo);
+  animation: line-roxo 5s linear;
 }
+
+
 
 .get-started .three {
   position: absolute;
   width: 50%;
   height: 0px;
   right: 300px;
-  top: 1460px;
-
+  top: 1360px;
   border: 2px solid var(--color-rosa);
+  animation: line-roxo 5s linear;
 }
 
+@keyframes line-roxo {
+  0% {
+    width: 0%;
+  }
+
+  50% {
+    width: 45%;
+  }
+
+  100% {
+    width: 100%ß;
+  }
+}
 
 
 
@@ -944,7 +959,7 @@ section {
   width: 90%;
   height: 0px;
   left: 0;
-  top: 3440px;
+  top: 3350px;
 
   border: 2px solid var(--color-primary);
 }
@@ -954,7 +969,7 @@ section {
   width: 90%;
   height: 0px;
   right: 0px;
-  top: 3450px;
+  top: 3360px;
 
   border: 2px solid var(--color-roxo);
 }
@@ -964,7 +979,7 @@ section {
   width: 50%;
   height: 0px;
   right: 300px;
-  top: 3460px;
+  top: 3370px;
 
   border: 2px solid var(--color-rosa);
 }
