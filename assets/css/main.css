@@ -11,6 +11,7 @@
   --color-primary: #FEBE2D;
   --color-secondary: #52565e;
   --color-roxo: #60539f;
+  --color-rosa: #FD63A6;
 }
 
 /* Smooth scroll behavior */
@@ -680,7 +681,7 @@ section {
 .get-started .content p {
   font-size: 1rem;
   color: var(--color-roxo);
-  font-weight: bold;
+  font-weight: 400;
 }
 
 .get-started .brand img {
@@ -692,29 +693,64 @@ section {
   width: 100%;
 }
 
+.get-started .one {
+  position: absolute;
+  width: 90%;
+  height: 0px;
+  left: 0;
+  top: 1440px;
+
+  border: 2px solid var(--color-primary);
+}
+
+.get-started .two {
+  position: absolute;
+  width: 90%;
+  height: 0px;
+  right: 0px;
+  top: 1450px;
+
+  border: 2px solid var(--color-roxo);
+}
+
+.get-started .three {
+  position: absolute;
+  width: 50%;
+  height: 0px;
+  right: 300px;
+  top: 1460px;
+
+  border: 2px solid var(--color-rosa);
+}
+
+
+
+
 /*--------------------------------------------------------------
 # Section Two
 --------------------------------------------------------------*/
 
-/* 
-.section-two {
-  
-} */
+
+.bg-two {
+  background-image: linear-gradient(to top, #5936ab, #6d4abf, #815ed2, #9672e7, #aa87fb);
+}
+
 .section-two h1 {
-  color: var(--color-primary);
+  color: #fff;
   font-size: 3rem;
   font-weight: bold;
   text-transform: uppercase;
   letter-spacing: 1rem;
 }
 
+
 .section-two h1:after {
   content: "";
   position: absolute;
   display: block;
-  width: 60%;
+  width: 50%;
   height: 4px;
-  background: var(--color-primary);
+  background: #fff;
   left: 0;
   right: 0;
   margin: auto;
@@ -735,9 +771,51 @@ section {
 
 }
 
-.tab-content table th {
-  text-transform: uppercase;
+.section-two .nav-item button {
+  color: #fff;
 
+}
+
+.section-two .nav-item .active {
+  width: 200px;
+  background-color: var(--color-rosa);
+
+}
+
+.section-two .accordion-header button {
+  color: var(--color-rosa);
+  font-weight: bold;
+}
+
+.section-two .table thead th {
+  color: var(--color-rosa);
+  font-weight: bold;
+}
+
+.section-two .table tbody th {
+  color: var(--color-roxo);
+  font-weight: 400;
+}
+
+.section-two .table tbody td {
+  color: var(--color-roxo);
+  font-weight: 400;
+}
+
+.section-two .act-container ul li {
+  color: #fff;
+}
+
+.section-two .act-container h3:after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 33%;
+  height: 4px;
+  background: var(--color-primary);
+  left: 0;
+  right: 0;
+  margin: auto;
 }
 
 .section-two .tab-content .card {
@@ -757,6 +835,7 @@ section {
 
   text-transform: uppercase;
   color: #FD63A6;
+
 }
 
 
@@ -776,22 +855,158 @@ section {
 --------------------------------------------------------------*/
 
 
-.section-three {
+/* .section-three {
 
   background-image: url("../img/bg-dobra-2.png");
   background-color: rgba(0, 0, 0, 0.7);
 
-}
+} */
 
 .section-three img {
   max-width: 300px;
 
 }
 
+.section-three h1 {
+
+  color: var(--color-primary);
+  font-size: 3rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 0.5rem;
+  padding-bottom: 100px;
+}
+
+.section-three h1:after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 60%;
+  height: 4px;
+  background: var(--color-primary);
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
 .section-three .btn-three-section {
   font-family: var(--font-primary);
+  font-weight: 500;
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 12px 40px;
+  border-radius: 50px;
+  transition: 0.5s;
+  margin: 10px;
+  color: var(--color-primary);
+  border: 2px solid var(--color-primary);
+}
+
+.section-three .btn-three-section:hover {
+  background: var(--color-primary);
+  color: #fff;
+}
+
+.section-three h3 {
+  font-size: 2.5rem;
+  color: var(--color-primary);
   font-weight: bold;
-  font-size: 1.5rem;
+  margin-bottom: 25px;
+  padding-bottom: 25px;
+  position: relative;
+
+}
+
+.section-three h3:after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 40%;
+  height: 4px;
+  background: var(--color-primary);
+  bottom: 0;
+  left: 0;
+  /* right: 0; */
+  margin: auto;
+
+}
+
+.section-three p {
+  font-size: 1rem;
+  color: var(--color-roxo);
+  font-weight: 400;
+}
+
+.section-three .one {
+  position: absolute;
+  width: 90%;
+  height: 0px;
+  left: 0;
+  top: 3440px;
+
+  border: 2px solid var(--color-primary);
+}
+
+.section-three .two {
+  position: absolute;
+  width: 90%;
+  height: 0px;
+  right: 0px;
+  top: 3450px;
+
+  border: 2px solid var(--color-roxo);
+}
+
+.section-three .three {
+  position: absolute;
+  width: 50%;
+  height: 0px;
+  right: 300px;
+  top: 3460px;
+
+  border: 2px solid var(--color-rosa);
+}
+
+/*--------------------------------------------------------------
+# Section Four
+--------------------------------------------------------------*/
+.bg-four {
+  background-image: linear-gradient(to top, #5936ab, #6d4abf, #815ed2, #9672e7, #aa87fb);
+}
+
+.section-four h1 {
+  color: #fff;
+  font-size: 3rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 0.5rem;
+  margin-bottom: 20px;
+}
+
+.section-four h1:after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 60%;
+  height: 4px;
+  background: #fff;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+.section-four p {
+  font-size: 1rem;
+  color: #fff;
+  font-weight: 400;
+}
+
+.section-four .btn-section-four {
+  font-family: #fff;
+  font-weight: 500;
+  font-size: 1rem;
   text-transform: uppercase;
   letter-spacing: 1px;
   display: inline-block;
@@ -800,12 +1015,14 @@ section {
   transition: 0.5s;
   margin: 10px;
   color: #fff;
-  border: 5px solid #fff;
+  border: 2px solid #fff;
 }
 
-.section-three .btn-three-section:hover {
+.section-four .btn-section-four:hover {
   background: var(--color-primary);
+  color: #fff;
 }
+
 
 /*--------------------------------------------------------------
 # Section Five
@@ -814,7 +1031,7 @@ section {
 
 .section-five {
 
-  background-image: url("../img/bg-dobra-3.png");
+  /* background-image: url("../img/bg-dobra-3.png"); */
 }
 
 .section-five .content h4 {
@@ -830,6 +1047,8 @@ section {
   text-transform: uppercase;
 
 }
+
+
 
 /*--------------------------------------------------------------
 # Footer
