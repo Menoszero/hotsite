@@ -295,6 +295,25 @@
         object-fit: cover;
     }
 
+    .section-two .table thead th {
+        color: var(--color-rosa);
+        font-weight: bold;
+        font-size: 0.8rem;
+    }
+
+    .section-two .table tbody th {
+        color: var(--color-roxo);
+        font-weight: 400;
+        font-size: 0.8rem;
+    }
+
+    .section-two .table tbody td {
+        color: var(--color-roxo);
+        font-weight: 400;
+        font-size: 0.8rem;
+    }
+
+
     .section-three .box-img {
         order: 2;
     }
@@ -325,8 +344,8 @@
 
     .section-four h1 {
         font-size: 2rem;
-       
-      }
+
+    }
 }
 
 /* 
