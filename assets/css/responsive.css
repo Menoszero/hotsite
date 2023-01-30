@@ -348,6 +348,13 @@
     }
 }
 
+@media (min-width: 1980px){
+#hero-video {
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+}
+}
 /* 
 @media (min-width: 640px) {
     .hero .carousel-control-prev {
