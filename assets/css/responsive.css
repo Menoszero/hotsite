@@ -313,6 +313,14 @@
         font-size: 0.8rem;
     }
 
+    .section-two .act-container .box-minicurso {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        padding-right: 30px;
+    }
+
+   
 
     .section-three .box-img {
         order: 2;
@@ -348,13 +356,14 @@
     }
 }
 
-@media (min-width: 1980px){
-#hero-video {
-    width: 100vw;
-    height: 100vh;
-    object-fit: cover;
+@media (min-width: 1980px) {
+    #hero-video {
+        width: 100vw;
+        height: 100vh;
+        object-fit: cover;
+    }
 }
-}
+
 /* 
 @media (min-width: 640px) {
     .hero .carousel-control-prev {

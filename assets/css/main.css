@@ -533,6 +533,17 @@ section {
   color: #fff;
 }
 
+.section-two .act-container .box-minicurso {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.section-two .act-container img {
+  width: 400px;
+  height: auto;
+}
+
 .section-two .act-container h3:after {
   content: "";
   position: absolute;
@@ -598,9 +609,11 @@ section {
 .section-three .box-img {
   order: 1;
 }
-.section-three .box-oral{
+
+.section-three .box-oral {
   order: 2;
 }
+
 .section-three h1 {
 
   color: var(--color-primary);
@@ -790,9 +803,9 @@ section {
 
 }
 
-.section-five .img-footer-ingles{
+.section-five .img-footer-ingles {
   max-width: 300px;
-  
+
 }
 
 
