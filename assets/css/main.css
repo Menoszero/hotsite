@@ -684,6 +684,7 @@ section {
   font-size: 1rem;
   color: var(--color-roxo);
   font-weight: 400;
+  text-align: justify;
 }
 
 .box-line {
@@ -756,6 +757,7 @@ section {
   font-size: 1rem;
   color: #fff;
   font-weight: 400;
+  text-align: justify;
 }
 
 .section-four .btn-section-four {
