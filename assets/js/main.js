@@ -158,3 +158,19 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
 });
+
+
+
+// Menu fixed apos o scroll 
+const menu = document.querySelector('.header');
+const menuTop = menu.offsetTop;
+
+function handleScroll() {
+  if (window.pageYOffset > menuTop) {
+    menu.classList.add('fixed-menu');
+  } else {
+    menu.classList.remove('fixed-menu');
+  }
+}
+
+window.addEventListener('scroll', handleScroll);
