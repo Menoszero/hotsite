@@ -199,6 +199,7 @@ section {
   left: 0;
   right: 0;
 }
+
 .fixed-menu {
   background-color: var(--color-roxo);
   position: fixed;
@@ -497,6 +498,30 @@ section {
   padding-bottom: 2rem;
 }
 
+.section-two h4 {
+  color: var(--color-primary);
+  font-size: 1.5rem;
+  font-weight: bold;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  text-transform: uppercase;
+
+}
+
+.section-two h4:after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 40%;
+  height: 4px;
+  background: var(--color-primary);
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+
+
 .section-two ul li {
   color: var(--color-roxo);
   font-size: 1rem;
@@ -525,6 +550,7 @@ section {
   color: var(--color-rosa);
   font-weight: bold;
 }
+
 
 .section-two .table tbody th {
   color: var(--color-roxo);
