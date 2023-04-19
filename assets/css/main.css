@@ -546,6 +546,11 @@ section {
   font-weight: bold;
 }
 
+.center{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 .section-two .table thead th {
   color: var(--color-rosa);
   font-weight: bold;
